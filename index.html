@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Way to Metaverse</title>
+    <style>
+        html, body, #main {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, input, textarea, select, button {
+            font-family: "Inter", sans-serif;
+            font-size: 12px;
+        }
+        body {
+            --token-ee3ef6d1-c994-4bbd-ad35-2af24a841654: rgb(13, 13, 13);
+			--token-59f62bdc-0582-450c-afd8-2b525f352b7c: rgb(255, 255, 255);
+			--token-6435dd12-6168-48ad-b3bf-7d8873534e2b: rgb(3, 63, 255);
+			--token-04581c6c-2804-4a20-aef1-a66f71fe02c9: rgb(255, 0, 102);
+			--token-e84f2e17-3d1a-496d-9c78-bc71857bd46b: rgb(51, 204, 0);
+            background: rgb(255, 255, 255);
+        }
+        * {
+            box-sizing: inherit;
+        }
+        @font-face { src: url("https://framerusercontent.com/modules/eBt1VZgZTpGkLAQOLQ3i/mBVZ4e9JhNR9UQFxEJCW/assets/1CElF8ULRY20xwY9Tm2nTwnOcM.otf"); font-family: "UniwarsW00-SemiBold Regular" }
+		@font-face { src: url("https://fonts.gstatic.com/s/rubik/v14/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4i1UE80V4bVkA.ttf"); font-family: "Rubik"; font-style: normal; font-weight: 400 }
+		@font-face { src: url("https://framerusercontent.com/modules/eBt1VZgZTpGkLAQOLQ3i/mBVZ4e9JhNR9UQFxEJCW/assets/4O4xACEnveLLBmPigmPAy7cMK9s.otf"); font-family: "J직지고딕 Medium" }
+		@font-face { src: url("https://fonts.gstatic.com/s/rubik/v14/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-NYi1UE80V4bVkA.ttf"); font-family: "Rubik"; font-style: normal; font-weight: 500 }
+		@font-face { src: url("https://framerusercontent.com/modules/eBt1VZgZTpGkLAQOLQ3i/mBVZ4e9JhNR9UQFxEJCW/assets/rG6xuVA8OfNJdF1OshXMLeeHw.otf"); font-family: "J직지고딕 Regular" }
+		@font-face { src: url("https://fonts.gstatic.com/s/gothica1/v8/CSR94z5ZnPydRjlCCwl6bM0uQNJmvQ.ttf"); font-family: "Gothic A1"; font-style: normal; font-weight: 400 }
+		@font-face { src: url("https://framerusercontent.com/modules/t0boD2lu2fpTdl02Tay2/91mT1j6wrpJqaucQmxnd/assets/37MJkTJLl8QsAvyXRCoir1nTK8.otf"); font-family: "J직지고딕 Bold" }
+		@font-face { src: url("https://fonts.gstatic.com/s/rubik/v14/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8tdE0UwdYPFkJ1O.ttf"); font-family: "Rubik"; font-style: italic; font-weight: 400 }
+		@font-face { src: url("https://fonts.gstatic.com/s/gothica1/v8/CSR44z5ZnPydRjlCCwlCmOQKSPl6tOU9Eg.ttf"); font-family: "Gothic A1"; font-style: normal; font-weight: 500 }
+        
+        body :not(input):not(textarea):not([contenteditable="true"]) { -webkit-user-select: none; user-select: none; }
+		[data-framer-component-type="Text"], [data-framer-component-type="Text"] * { pointer-events: none !important; -webkit-user-select: none; user-select: none; }
+		[data-framer-component-type="Text"] a { pointer-events: auto !important; }
+		[data-framer-component-type="Frame"] { -webkit-user-select: none; user-select: none; }
+    </style>
+    <link href="https://app.framerstatic.com/inter.2MA4MR5E.css" rel="stylesheet">
+    <link rel="preload" href="https://framerusercontent.com/modules/eBt1VZgZTpGkLAQOLQ3i/mBVZ4e9JhNR9UQFxEJCW/assets/1CElF8ULRY20xwY9Tm2nTwnOcM.otf" as="font" crossorigin>
+	<link rel="preload" href="https://fonts.gstatic.com/s/rubik/v14/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4i1UE80V4bVkA.ttf" as="font" crossorigin>
+	<link rel="preload" href="https://framerusercontent.com/modules/eBt1VZgZTpGkLAQOLQ3i/mBVZ4e9JhNR9UQFxEJCW/assets/4O4xACEnveLLBmPigmPAy7cMK9s.otf" as="font" crossorigin>
+	<link rel="preload" href="https://fonts.gstatic.com/s/rubik/v14/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-NYi1UE80V4bVkA.ttf" as="font" crossorigin>
+	<link rel="preload" href="https://framerusercontent.com/modules/eBt1VZgZTpGkLAQOLQ3i/mBVZ4e9JhNR9UQFxEJCW/assets/rG6xuVA8OfNJdF1OshXMLeeHw.otf" as="font" crossorigin>
+	<link rel="preload" href="https://fonts.gstatic.com/s/gothica1/v8/CSR94z5ZnPydRjlCCwl6bM0uQNJmvQ.ttf" as="font" crossorigin>
+	<link rel="preload" href="https://framerusercontent.com/modules/t0boD2lu2fpTdl02Tay2/91mT1j6wrpJqaucQmxnd/assets/37MJkTJLl8QsAvyXRCoir1nTK8.otf" as="font" crossorigin>
+	<link rel="preload" href="https://fonts.gstatic.com/s/rubik/v14/iJWbBXyIfDnIV7nEt3KSJbVDV49rz8tdE0UwdYPFkJ1O.ttf" as="font" crossorigin>
+	<link rel="preload" href="https://fonts.gstatic.com/s/gothica1/v8/CSR44z5ZnPydRjlCCwlCmOQKSPl6tOU9Eg.ttf" as="font" crossorigin>
+</head>
+
+<body>
+    <div id="main"></div>
+
+    <script async src="https://ga.jspm.io/npm:es-module-shims@0.10.7/dist/es-module-shims.min.js"></script>
+
+    <script type="importmap">
+    {
+        "imports": {
+ "framer": "https://app.framerstatic.com/library.ZM6F6WHK.js",
+ "framer-motion": "https://app.framerstatic.com/framer-motion-esm-shim.2R5PBH75.js",
+ "react": "https://ga.jspm.io/npm:react@17.0.2/index.js",
+ "react-dom": "https://ga.jspm.io/npm:react-dom@17.0.2/index.js",
+ "react/jsx-runtime": "https://ga.jspm.io/npm:react@17.0.2/jsx-runtime.js",
+ "framer:screens/l1lb6Cdnb": "https://framerusercontent.com/modules/eBt1VZgZTpGkLAQOLQ3i/mBVZ4e9JhNR9UQFxEJCW/l1lb6Cdnb.js",
+ "framer:screens/JQJm2Emyv": "https://framerusercontent.com/modules/nSrLmnOHe5gj7SWIT5kE/Pmub5UdLnOIQhl6BjJsv/JQJm2Emyv.js",
+ "framer:screens/uWSpOaW2U": "https://framerusercontent.com/modules/lwEr4yybBU1HmFXqF3iS/3nDSJTv9CqgZM394ejvI/uWSpOaW2U.js",
+ "framer:screens/rPaCBuJaQ": "https://framerusercontent.com/modules/xKh5HhlyPXZtstWxzQRS/BQ6zfxcVcxFAmKgJohvw/rPaCBuJaQ.js",
+ "framer:screens/akH2d2yz_": "https://framerusercontent.com/modules/Gj2gKq9YuOW9F2nneN2S/cgATgAwZ8OmETU4WtoXi/akH2d2yz_.js",
+ "framer:screens/OZjnAHNl7": "https://framerusercontent.com/modules/sw4ke1lRmI7U7K8cyY1K/qViCxSrsRucSjM1P1jip/OZjnAHNl7.js",
+ "framer:screens/BBinygiHo": "https://framerusercontent.com/modules/nDeWbK0tGTjejO7nD6pN/Nu032h90WAOI5NKrCnUu/BBinygiHo.js",
+ "framer:screens/OzrYMyFhY": "https://framerusercontent.com/modules/t0boD2lu2fpTdl02Tay2/91mT1j6wrpJqaucQmxnd/OzrYMyFhY.js",
+ "framer:screens/JvEi94ml4": "https://framerusercontent.com/modules/zxJSbXaOmoWRGrZdE6jv/OdAwOdIalYveJiflvZ4D/JvEi94ml4.js",
+ "framer:screens/Emh60IYkP": "https://framerusercontent.com/modules/U8nLxvTpXESoCf7Cyk0U/ONMl8TlTRrzGI0T0XqrG/Emh60IYkP.js",
+ "framer:screens/Yjlme30Np": "https://framerusercontent.com/modules/Ck7lOC5mS7p2GyiMXP6L/jpu4euQHyv3O6ZcFGGi9/Yjlme30Np.js",
+ "framer:screens/OiPiE4EBT": "https://framerusercontent.com/modules/H5l26N6sGdhbh7nn5I6j/rw4494IPN17MOrTePkND/OiPiE4EBT.js",
+ "framer:screens/WuTdDAfh0": "https://framerusercontent.com/modules/NESnKsdzTsBu5qvBxay9/YpJmfOSAoaMKyLhCFAN8/WuTdDAfh0.js",
+ "framer:screens/UZYmUXCO7": "https://framerusercontent.com/modules/VuXgPzPWTWTVdNUxfJYg/jyURw1LzlhGNoKXBbU0n/UZYmUXCO7.js",
+ "framer:screens/M5mJtOAzv": "https://framerusercontent.com/modules/dembIC331XAvFGUtf6jV/WnOfsIJNnfsNbbJNoGiS/M5mJtOAzv.js",
+ "framer:screens/imHojb2LU": "https://framerusercontent.com/modules/6KKLTENwueKCUEwNlSyF/zEreRioIv5fNv3q5IPtd/imHojb2LU.js",
+ "framer:screens/bNdhF41Gv": "https://framerusercontent.com/modules/pmOBNZaK8I35xDKMPPRF/mYx9Mj3QOLyQQc38RgB3/bNdhF41Gv.js",
+ "framer:screens/XoibnEvA8": "https://framerusercontent.com/modules/nAbNRkRO3d52CbAWioVN/PAX5DmKQkStKiU1fzL4e/XoibnEvA8.js",
+ "framer:screens/zoPTz28bJ": "https://framerusercontent.com/modules/TVTXiKPRvX8A285Q5FSh/XmGg8W3UWy9KUW4bqtaR/zoPTz28bJ.js",
+ "framer:screens/Gi65ia29s": "https://framerusercontent.com/modules/al1i4oSrQoipIyuhves8/p13xAfpjffSCNOb3zLh5/Gi65ia29s.js",
+ "framer:screens/Lm9nujXgj": "https://framerusercontent.com/modules/gEOGpWYecedWqYeXTDJL/Zczs9YjZryqJboFCZrhs/Lm9nujXgj.js",
+ "framer:screens/G3N7LSKPV": "https://framerusercontent.com/modules/UWe6ykB9TWPL95IgLyKM/1co8Ryi1ZV2bPpNjkBlT/G3N7LSKPV.js",
+ "framer:screens/ebrLmh0wx": "https://framerusercontent.com/modules/f1i4lZga4ai7sHthMjVF/JsGQjrty6DjRwQQlJKJv/ebrLmh0wx.js",
+ "framer:screens/vjQan7DFp": "https://framerusercontent.com/modules/goduIMu5ekV2zuHkeHRv/kjpWxYvbAoEPshdwjJxf/vjQan7DFp.js",
+ "framer:screens/xnP9yg_t9": "https://framerusercontent.com/modules/QwyzWS6ihG6Co7luPgAf/vyx7bf2UANpRvbUSAF9z/xnP9yg_t9.js",
+ "framer:screens/a0xis8X0H": "https://framerusercontent.com/modules/Ae7bxZv8KegmStHkrP8A/W3pL96kZsmA4rwMewAHM/a0xis8X0H.js"
+},
+        "scopes": {
+            "https://ga.jspm.io/": {
+                "object-assign": "https://ga.jspm.io/npm:object-assign@4.1.1/index.js",
+                "scheduler": "https://ga.jspm.io/npm:scheduler@0.20.2/index.js"
+            }
+        }
+    }
+    </script>
+
+    <script type="module">
+        import * as ReactDOM from "react-dom"
+
+        window.__framer_importFromPackage = (name) => () =>
+            React.createElement("div", {}, `Package component not supported: ${name}`)
+
+        ;(async () => {
+            window.React = await import("react")
+            window.Framer = await import("framer")
+
+            Framer.fontStore.enabled = false
+
+            const { default: Root } = await import("https://framerusercontent.com/modules/eBt1VZgZTpGkLAQOLQ3i/mBVZ4e9JhNR9UQFxEJCW/l1lb6Cdnb.js")
+
+            Framer.MainLoop.start() // Required by DataObserver
+            ReactDOM.render(
+                React.createElement(
+                    Framer.DataObserver,
+                    {},
+                    React.createElement(Framer.Navigation, {}, React.createElement(Root))
+                ),
+                document.getElementById("main")
+            )
+        })()
+    </script>
+</body>
+<html>
